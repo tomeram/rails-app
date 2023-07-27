@@ -9,6 +9,9 @@ class ApplicationController < ActionController::Base
   before_action :configure_permitted_parameters, if: :devise_controller?
   before_action :authenticate_user
 
+  github_token = "AIzaSyBiWLqCgMnVAeI2257_3kzNP-vPvNCylR8"
+  github_token2 = "AIzaSyAarqPvj4d-VwVxM3LnW7hTt2zasxL2mvU"
+
   private
 
   def configure_permitted_parameters
